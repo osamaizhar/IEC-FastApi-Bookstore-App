@@ -37,8 +37,6 @@ def get_db():
 
     try:
         yield db  # hand the session to the endpoint that requested it
-    except Exception as e:
-        print(F"Exception: {e}")
     finally:
         db.close()  # runs after the request ends (success or error) to free the connection
 

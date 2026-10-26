@@ -5,6 +5,7 @@ They are separate from the ORM models in models.py, which describe DB tables.
 """
 from pydantic import BaseModel  # gives us automatic type validation and JSON serialization
 
+# Payload Structure defined
 class BookBase(BaseModel):
     """Fields shared by every book schema.
 
